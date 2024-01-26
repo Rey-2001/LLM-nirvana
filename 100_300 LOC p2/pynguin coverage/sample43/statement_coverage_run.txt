@@ -1,0 +1,19 @@
+Name                                                                                   Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------------------------------------------
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/__init__.py         13      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/__version__.py       5      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/exception.py        69     57    17%   22-33, 43-53, 94-141
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/fs.py               66     47    29%   27-33, 46-51, 57, 74-76, 88-96, 107-128, 138-145
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/io.py              133     92    31%   37-46, 52-55, 58-59, 62-64, 67, 70-73, 76-79, 82-85, 88-91, 143-155, 163-207, 210-211, 214, 217, 220, 223, 226, 229, 244-249
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/iterator.py        187    121    35%   35-44, 59-66, 81-89, 105-111, 144-157, 187-197, 227, 239-240, 243, 246-251, 254-256, 259-261, 264-273, 282-286, 289-292, 317-328, 331, 334-338, 341, 344, 353-357, 383-384, 393-395, 398, 401
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/log.py             105     62    41%   26-30, 43-50, 53-54, 57-66, 69, 72-79, 82-88, 91-92, 97-99, 133, 142-145, 166, 168-170, 173-174, 188-193, 197, 203
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/math.py              3      1    67%   8
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/multiproc.py       540    381    29%   40, 43, 46, 49, 52, 63-72, 75-78, 81, 84, 88, 91-93, 97, 100-102, 106, 109-112, 116, 119, 122, 125, 177, 182-186, 191-197, 201-204, 212-214, 217, 225-232, 239-243, 248-254, 258-264, 269-299, 309-351, 356-369, 372-376, 380-383, 387-396, 403, 413-440, 443, 682-741, 751-756, 759, 762-763, 766, 769-774, 784-792, 871, 875, 879, 899-924, 927-938, 941-952, 961, 968, 972, 976, 979, 983, 986-988, 991, 994, 997, 1000-1017, 1024, 1027-1029, 1032-1061, 1064, 1067, 1070-1079
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/run.py              60     11    82%   32, 39-40, 44, 90, 92-93, 103-105, 107
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/structure.py        53     36    32%   32, 46, 55-57, 67-71, 82-96, 112-127
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/timing.py           10      5    50%   30-34
+/Users/DELL/Desktop/python_projects_pynguin_testing/flutes_new/flutes/types.py             9      0   100%
+__init__.py                                                                                0      0   100%
+test_run.py                                                                               11      0   100%
+--------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                   1264    813    36%
