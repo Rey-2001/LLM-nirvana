@@ -1,0 +1,164 @@
+Directory: ./sample20
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 11 items
+
+sample20/test_example.py .....FFFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_ap ____________________________________
+
+    def test_ap():
+        val1 = Validation.success(5)
+        val2 = Validation.success(lambda x: x * 2)
+>       new_val = val2.ap(val1)
+
+sample20/test_example.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Validation object at 0x7ff39aabb7c0>
+fn = <example.Validation object at 0x7ff39aabb100>
+
+    def ap(self, fn):
+        """
+        It takes as a parameter function returning another Validation.
+        Function is called with Validation value and returns new Validation with previous value
+        and concated new and old errors.
+    
+        :param monad: monad contains function
+        :type monad: Function(A) -> Validation[Any, List[E]]
+        :returns: new validation with stored errors
+        :rtype: Validation[A, List[E]]
+        """
+>       return Validation(self.value, self.errors + fn(self.value).errors)
+E       TypeError: 'Validation' object is not callable
+
+sample20/example.py:96: TypeError
+________________________________ test_to_either ________________________________
+
+    def test_to_either():
+        val1 = Validation.success(5)
+        val2 = Validation.fail(["error"])
+>       either1 = val1.to_either()
+
+sample20/test_example.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Validation object at 0x7ff39ab87c10>
+
+    def to_either(self):
+        """
+        Transform Validation to Either.
+    
+        :returns: Right monad with previous value when Validation has no errors, in other case Left with errors list
+        :rtype: Right[A] | Left[E]
+        """
+>       from pymonet.either import Left, Right
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample20/example.py:105: ModuleNotFoundError
+________________________________ test_to_maybe _________________________________
+
+    def test_to_maybe():
+        val1 = Validation.success(5)
+        val2 = Validation.fail(["error"])
+>       maybe1 = val1.to_maybe()
+
+sample20/test_example.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Validation object at 0x7ff39aa5b280>
+
+    def to_maybe(self):
+        """
+        Transform Validation to Maybe.
+    
+        :returns: Maybe with Validation Value when Validation has no errors, in other case empty Maybe
+        :rtype: Maybe[A | None]
+        """
+>       from pymonet.maybe import Maybe
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample20/example.py:118: ModuleNotFoundError
+_________________________________ test_to_box __________________________________
+
+    def test_to_box():
+        val = Validation.success(5)
+>       box = val.to_box()
+
+sample20/test_example.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Validation object at 0x7ff39ab85cc0>
+
+    def to_box(self):
+        """
+        Transform Validation to Box.
+    
+        :returns: Box with Validation value
+        :rtype: Box[A]
+        """
+>       from pymonet.box import Box
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample20/example.py:131: ModuleNotFoundError
+_________________________________ test_to_lazy _________________________________
+
+    def test_to_lazy():
+        val = Validation.success(5)
+>       lazy = val.to_lazy()
+
+sample20/test_example.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Validation object at 0x7ff39aa5b580>
+
+    def to_lazy(self):
+        """
+        Transform Validation to Try.
+    
+        :returns: Lazy monad with function returning Validation value
+        :rtype: Lazy[Function() -> (A | None)]
+        """
+>       from pymonet.lazy import Lazy
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample20/example.py:142: ModuleNotFoundError
+_________________________________ test_to_try __________________________________
+
+    def test_to_try():
+        val1 = Validation.success(5)
+        val2 = Validation.fail(["error"])
+>       try1 = val1.to_try()
+
+sample20/test_example.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Validation object at 0x7ff39aab9930>
+
+    def to_try(self):
+        """
+        Transform Validation to Try.
+    
+        :returns: successfully Try with Validation value value. Try is successful when Validation has no errors
+        :rtype: Try[A]
+        """
+>       from pymonet.monad_try import Try
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample20/example.py:153: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED sample20/test_example.py::test_ap - TypeError: 'Validation' object is ...
+FAILED sample20/test_example.py::test_to_either - ModuleNotFoundError: No mod...
+FAILED sample20/test_example.py::test_to_maybe - ModuleNotFoundError: No modu...
+FAILED sample20/test_example.py::test_to_box - ModuleNotFoundError: No module...
+FAILED sample20/test_example.py::test_to_lazy - ModuleNotFoundError: No modul...
+FAILED sample20/test_example.py::test_to_try - ModuleNotFoundError: No module...
+========================= 6 failed, 5 passed in 0.10s ==========================
+
+Test Error Output:
+
+

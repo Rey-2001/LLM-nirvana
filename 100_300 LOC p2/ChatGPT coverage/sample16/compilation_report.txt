@@ -1,0 +1,158 @@
+Directory: ./sample16
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 9 items
+
+sample16/test_example.py ..FFFFFFF                                       [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_lazy_with_ap _______________________________
+
+    def test_lazy_with_ap():
+        lazy1 = Lazy.of(lambda x: x + 5)
+        lazy2 = Lazy.of(5)
+        lazy_ap = lazy1.ap(lazy2)
+>       assert lazy_ap.get() == 10
+E       assert <function test_lazy_with_ap.<locals>.<lambda> at 0x7fbc8aaa5d80> == 10
+E        +  where <function test_lazy_with_ap.<locals>.<lambda> at 0x7fbc8aaa5d80> = <bound method Lazy.get of <example.Lazy object at 0x7fbc8ab06cb0>>()
+E        +    where <bound method Lazy.get of <example.Lazy object at 0x7fbc8ab06cb0>> = <example.Lazy object at 0x7fbc8ab06cb0>.get
+
+sample16/test_example.py:18: AssertionError
+_____________________________ test_lazy_with_bind ______________________________
+
+    def test_lazy_with_bind():
+        lazy = Lazy.of(5)
+        lazy_bind = lazy.bind(lambda x: Lazy.of(x + 5))
+>       assert lazy_bind.get() == 10
+E       assert <function Lazy.of.<locals>.<lambda> at 0x7fbc8ab38ca0> == 10
+E        +  where <function Lazy.of.<locals>.<lambda> at 0x7fbc8ab38ca0> = <bound method Lazy.get of <example.Lazy object at 0x7fbc8ab05ed0>>()
+E        +    where <bound method Lazy.get of <example.Lazy object at 0x7fbc8ab05ed0>> = <example.Lazy object at 0x7fbc8ab05ed0>.get
+
+sample16/test_example.py:23: AssertionError
+____________________________ test_lazy_with_to_box _____________________________
+
+    def test_lazy_with_to_box():
+        lazy = Lazy.of(5)
+>       box = lazy.to_box()
+
+sample16/test_example.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Lazy object at 0x7fbc8aabcfd0>, args = ()
+
+    def to_box(self, *args):
+        """
+        Transform Lazy into Box with constructor_fn result.
+    
+        :returns: Box monad with constructor_fn result
+        :rtype: Box[A]
+        """
+>       from pymonet.box import Box
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample16/example.py:113: ModuleNotFoundError
+___________________________ test_lazy_with_to_either ___________________________
+
+    def test_lazy_with_to_either():
+        lazy = Lazy.of(5)
+>       either = lazy.to_either()
+
+sample16/test_example.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Lazy object at 0x7fbc8aa5b6a0>, args = ()
+
+    def to_either(self, *args):
+        """
+        Transform Lazy into Either (Right) with constructor_fn result.
+    
+        :returns: Right monad with constructor_fn result
+        :rtype: Right[A]
+        """
+>       from pymonet.either import Right
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample16/example.py:124: ModuleNotFoundError
+___________________________ test_lazy_with_to_maybe ____________________________
+
+    def test_lazy_with_to_maybe():
+        lazy = Lazy.of(5)
+>       maybe = lazy.to_maybe()
+
+sample16/test_example.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Lazy object at 0x7fbc8ab6f820>, args = ()
+
+    def to_maybe(self, *args):
+        """
+        Transform Lazy into not empty Maybe with constructor_fn result.
+    
+        :returns: not empty Maybe monad with constructor_fn result
+        :rtype: Maybe[A]
+        """
+>       from pymonet.maybe import Maybe
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample16/example.py:135: ModuleNotFoundError
+____________________________ test_lazy_with_to_try _____________________________
+
+    def test_lazy_with_to_try():
+        lazy = Lazy.of(5)
+>       try_ = lazy.to_try()
+
+sample16/test_example.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Lazy object at 0x7fbc8aa5bca0>, args = ()
+
+    def to_try(self, *args):
+        """
+        Transform Lazy into Try with constructor_fn result.
+        Try will be successful only when constructor_fn not raise anything.
+    
+        :returns: Try with constructor_fn result
+        :rtype: Try[A] | Try[Error]
+        """
+>       from pymonet.monad_try import Try
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample16/example.py:147: ModuleNotFoundError
+_________________________ test_lazy_with_to_validation _________________________
+
+    def test_lazy_with_to_validation():
+        lazy = Lazy.of(5)
+>       validation = lazy.to_validation()
+
+sample16/test_example.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Lazy object at 0x7fbc8ab04ac0>, args = ()
+
+    def to_validation(self, *args):
+        """
+        Transform Lazy into successful Validation with constructor_fn result.
+    
+        :returns: successfull Validation monad with previous value
+        :rtype: Validation[A, []]
+        """
+>       from pymonet.validation import Validation
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample16/example.py:158: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED sample16/test_example.py::test_lazy_with_ap - assert <function test_la...
+FAILED sample16/test_example.py::test_lazy_with_bind - assert <function Lazy....
+FAILED sample16/test_example.py::test_lazy_with_to_box - ModuleNotFoundError:...
+FAILED sample16/test_example.py::test_lazy_with_to_either - ModuleNotFoundErr...
+FAILED sample16/test_example.py::test_lazy_with_to_maybe - ModuleNotFoundErro...
+FAILED sample16/test_example.py::test_lazy_with_to_try - ModuleNotFoundError:...
+FAILED sample16/test_example.py::test_lazy_with_to_validation - ModuleNotFoun...
+========================= 7 failed, 2 passed in 0.10s ==========================
+
+Test Error Output:
+
+

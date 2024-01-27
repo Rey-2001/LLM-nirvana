@@ -1,0 +1,66 @@
+Directory: ./sample18
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 13 items
+
+sample18/test_example.py .F.F.F.F.....                                   [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_try_of_failure ______________________________
+
+    def test_try_of_failure():
+        value = Try.of(lambda: 1/0)
+>       assert value == Try(ZeroDivisionError('division by zero'), False)
+E       AssertionError: assert <example.Try object at 0x7f82a2a5b4f0> == <example.Try object at 0x7f82a2a5b580>
+E        +  where <example.Try object at 0x7f82a2a5b580> = Try(ZeroDivisionError('division by zero'), False)
+E        +    where ZeroDivisionError('division by zero') = ZeroDivisionError('division by zero')
+
+sample18/test_example.py:10: AssertionError
+_____________________________ test_try_map_failure _____________________________
+
+    def test_try_map_failure():
+        value = Try.of(lambda: 1/0).map(lambda x: x * 2)
+>       assert value == Try(ZeroDivisionError('division by zero'), False)
+E       AssertionError: assert <example.Try object at 0x7f82a2b3a9b0> == <example.Try object at 0x7f82a2b3a9e0>
+E        +  where <example.Try object at 0x7f82a2b3a9e0> = Try(ZeroDivisionError('division by zero'), False)
+E        +    where ZeroDivisionError('division by zero') = ZeroDivisionError('division by zero')
+
+sample18/test_example.py:18: AssertionError
+____________________________ test_try_bind_failure _____________________________
+
+    def test_try_bind_failure():
+        value = Try.of(lambda: 1/0).bind(lambda x: Try.of(lambda: x * 2))
+>       assert value == Try(ZeroDivisionError('division by zero'), False)
+E       AssertionError: assert <example.Try object at 0x7f82a2aba920> == <example.Try object at 0x7f82a2abacb0>
+E        +  where <example.Try object at 0x7f82a2abacb0> = Try(ZeroDivisionError('division by zero'), False)
+E        +    where ZeroDivisionError('division by zero') = ZeroDivisionError('division by zero')
+
+sample18/test_example.py:26: AssertionError
+_______________________________ test_try_on_fail _______________________________
+
+    def test_try_on_fail():
+        fail_callback = []
+    
+        def callback(x):
+            fail_callback.append(x)
+    
+        value = Try.of(lambda: 1/0).on_fail(callback)
+>       assert value == Try(ZeroDivisionError('division by zero'), False)
+E       AssertionError: assert <example.Try object at 0x7f82a2b3ab90> == <example.Try object at 0x7f82a2b3abf0>
+E        +  where <example.Try object at 0x7f82a2b3abf0> = Try(ZeroDivisionError('division by zero'), False)
+E        +    where ZeroDivisionError('division by zero') = ZeroDivisionError('division by zero')
+
+sample18/test_example.py:45: AssertionError
+=========================== short test summary info ============================
+FAILED sample18/test_example.py::test_try_of_failure - AssertionError: assert...
+FAILED sample18/test_example.py::test_try_map_failure - AssertionError: asser...
+FAILED sample18/test_example.py::test_try_bind_failure - AssertionError: asse...
+FAILED sample18/test_example.py::test_try_on_fail - AssertionError: assert <e...
+========================= 4 failed, 9 passed in 0.09s ==========================
+
+Test Error Output:
+
+

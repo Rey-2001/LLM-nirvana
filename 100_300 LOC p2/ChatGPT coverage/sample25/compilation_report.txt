@@ -1,0 +1,42 @@
+Directory: ./sample25
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 8 items
+
+sample25/test_example.py ....F..F                                        [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_error_eq _________________________________
+
+    def test_error_eq():
+        error1 = BaseError(text="Error message")
+        error2 = BaseError(text="Error message")
+>       assert error1 == error2
+E       AssertionError: assert BaseError(tex...code='custom') == BaseError(tex...code='custom')
+E         Use -v to get more diff
+
+sample25/test_example.py:32: AssertionError
+_________________________ test_validation_result_repr __________________________
+
+    def test_validation_result_repr():
+        result1 = ValidationResult(value=["a", "b", "c"])
+        result2 = ValidationResult(error=ValidationError(text="Invalid data"))
+        assert repr(result1) == "ValidationResult(value=['a', 'b', 'c'])"
+>       assert repr(result2) == "ValidationResult(error=ValidationError(text='Invalid data'))"
+E       assert "ValidationRe...de='custom'))" == "ValidationRe...valid data'))"
+E         Skipping 48 identical leading characters in diff, use -v to show
+E         - alid data'))
+E         + alid data', code='custom'))
+
+sample25/test_example.py:52: AssertionError
+=========================== short test summary info ============================
+FAILED sample25/test_example.py::test_error_eq - AssertionError: assert BaseE...
+FAILED sample25/test_example.py::test_validation_result_repr - assert "Valida...
+========================= 2 failed, 6 passed in 0.08s ==========================
+
+Test Error Output:
+
+

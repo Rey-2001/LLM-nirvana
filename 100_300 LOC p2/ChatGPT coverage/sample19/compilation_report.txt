@@ -1,0 +1,38 @@
+Directory: ./sample19
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 34 items
+
+sample19/test_example.py .........................F........              [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_map_concat ________________________________
+
+    def test_map_concat():
+        m1 = Map({1: Sum(5), 2: Sum(3)})
+        m2 = Map({2: Sum(7), 3: Sum(2)})
+>       assert m1.concat(m2) == Map({1: Sum(5), 2: Sum(10), 3: Sum(2)})
+
+sample19/test_example.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sample19/example.py:136: in concat
+    {key: value.concat(semigroup.value[key]) for key, value in self.value.items()}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+.0 = <dict_itemiterator object at 0x7f9460bd6de0>
+
+>       {key: value.concat(semigroup.value[key]) for key, value in self.value.items()}
+    )
+E   KeyError: 1
+
+sample19/example.py:136: KeyError
+=========================== short test summary info ============================
+FAILED sample19/test_example.py::test_map_concat - KeyError: 1
+========================= 1 failed, 33 passed in 0.11s =========================
+
+Test Error Output:
+
+
