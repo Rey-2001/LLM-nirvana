@@ -1,1 +1,1 @@
-
+Files that were collected from open-source Github repositories. Some of these files have native dependencies and didn't work with Pynguin. These files were used for generating results of iterative improvement in coverage with ChatGPT.
