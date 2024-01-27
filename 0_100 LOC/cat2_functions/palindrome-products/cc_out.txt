@@ -1,0 +1,6 @@
+5:0: 'largest' 1
+9:0: 'smallest' 1
+13:0: 'get_extreme_palindrome_with_factors' 4
+31:0: 'reverse_num' 2
+40:0: 'num_digits' 1
+44:0: 'palindromes' 11
