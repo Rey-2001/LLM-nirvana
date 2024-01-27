@@ -1,0 +1,4 @@
+5:0: 'mod_inverse' 3
+13:0: 'translate' 7
+34:0: 'encode' 1
+40:0: 'decode' 1

@@ -1,0 +1,4 @@
+1:0: 'response' 5
+17:0: '_is_silence' 1
+21:0: '_is_shouting' 1
+25:0: '_is_question' 1
