@@ -1,3 +1,0 @@
-15:0: 'dig_perms' 5
-52:0: 'check_rec' 8
-119:0: 'solve' 11
