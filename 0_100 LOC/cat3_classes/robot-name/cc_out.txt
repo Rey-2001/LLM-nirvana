@@ -1,0 +1,6 @@
+5:4: 'Robot.__init__' 1
+9:4: 'Robot.prefix' 1
+15:4: 'Robot.suffix' 1
+21:4: 'Robot.get_name' 4
+33:4: 'Robot.del_name' 1
+38:4: 'Robot.reset' 1

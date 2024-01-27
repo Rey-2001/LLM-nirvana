@@ -1,0 +1,4 @@
+6:4: 'PhoneNumber.__init__' 1
+12:4: 'PhoneNumber.pretty' 1
+15:4: 'PhoneNumber._clean' 3
+26:4: 'PhoneNumber._normalize' 10

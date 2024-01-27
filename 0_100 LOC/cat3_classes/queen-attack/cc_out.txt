@@ -1,0 +1,2 @@
+2:4: 'Queen.__init__' 5
+14:4: 'Queen.can_attack' 3
