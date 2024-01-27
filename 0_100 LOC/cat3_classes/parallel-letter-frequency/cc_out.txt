@@ -1,0 +1,4 @@
+12:4: 'LetterCounter.__init__' 1
+16:4: 'LetterCounter.add_counter' 2
+24:0: 'count_letters' 4
+36:0: 'calculate' 5

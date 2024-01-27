@@ -1,0 +1,8 @@
+7:0: 'truncate' 2
+14:4: 'LCInfo.__init__' 3
+39:4: 'LCInfo.number' 2
+51:4: 'LCInfo.currency' 1
+59:4: 'LCInfo.entry' 1
+68:4: 'LCInfo.table' 1
+74:0: 'create_entry' 1
+82:0: 'format_entries' 1

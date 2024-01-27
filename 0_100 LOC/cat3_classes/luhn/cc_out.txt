@@ -1,0 +1,2 @@
+2:4: 'Luhn.__init__' 5
+18:4: 'Luhn.valid' 1

@@ -1,0 +1,7 @@
+7:4: 'Hangman.__init__' 2
+16:4: 'Hangman.guess' 2
+24:4: 'Hangman.update_masked_word' 3
+32:4: 'Hangman.update_remaining_guesses' 2
+38:4: 'Hangman.update_status' 3
+46:4: 'Hangman.get_masked_word' 1
+49:4: 'Hangman.get_status' 1

@@ -1,0 +1,9 @@
+2:4: 'Node.__init__' 1
+9:4: 'LinkedList.__init__' 1
+14:4: 'LinkedList.__len__' 1
+17:4: 'LinkedList.__iter__' 2
+23:4: 'LinkedList.delete' 7
+47:4: 'LinkedList.push' 2
+58:4: 'LinkedList.pop' 3
+72:4: 'LinkedList.shift' 3
+85:4: 'LinkedList.unshift' 2
