@@ -1,0 +1,14 @@
+Name                                                                                      Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------------------------------------------------------------------------
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/__init__.py              4      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/_internal_utils.py      31      6     16      5    77%   13, 22, 28, 34, 36, 39
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/api.py                  91     20     46      9    73%   23-25, 43-44, 60-61, 69, 87, 190, 192-201, 204, 210
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/attr_category.py        69      6     18      6    86%   54, 62, 67->exit, 227, 247, 253, 268
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/color.py                17      6      4      1    57%   11-15, 20, 23
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/configuration.py        66     17     16      3    63%   71-89, 95-97
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/constants.py            13      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/format.py               38      1     11      1    96%   47
+__init__.py                                                                                   0      0      0      0   100%
+test_example.py                                                                              73     19      0      0    74%   12, 33, 39-41, 47-49, 55-57, 63-65, 71-73, 77, 81
+-------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                       402     75    111     25    77%

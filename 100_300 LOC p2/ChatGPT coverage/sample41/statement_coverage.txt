@@ -1,0 +1,14 @@
+Name                                                                                      Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------------
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/__init__.py              4      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/_internal_utils.py      31     12    61%   12-22, 28, 34, 36, 39, 49
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/api.py                  91     58    36%   23-25, 39-56, 59-63, 66, 69, 72, 86-92, 109, 124, 136, 151, 166-175, 178, 185-210
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/attr_category.py        69     16    77%   50, 54, 61-63, 227, 238, 252-279
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/color.py                17      6    65%   11-15, 20, 23
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/configuration.py        66     17    74%   71-89, 95-97
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/constants.py            13      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/pdir2-0.3.2/pdir/format.py               38     22    42%   16-29, 33-38, 42-51, 55
+__init__.py                                                                                   0      0   100%
+test_example.py                                                                              13      7    46%   16-32
+-----------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                       342    138    60%
