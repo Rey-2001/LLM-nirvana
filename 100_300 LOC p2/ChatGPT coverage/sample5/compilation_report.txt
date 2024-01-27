@@ -1,0 +1,38 @@
+Directory: ./sample5
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 3 items
+
+sample5/test_example.py .F.                                              [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_AnsiTextWrapper_wrap ___________________________
+
+    def test_AnsiTextWrapper_wrap():
+        wrapper = example.AnsiTextWrapper(width=10)
+        text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        expected_output = [
+            'Lorem',
+            'ipsum',
+            'dolor sit',
+            'amet,',
+            'consectetur',
+            'adipiscing',
+            'elit.'
+        ]
+>       assert wrapper.wrap(text) == expected_output
+E       AssertionError: assert ['Lorem', 'ip...piscing', ...] == ['Lorem', 'ip...piscing', ...]
+E         At index 3 diff: 'amet, cons' != 'amet,'
+E         Use -v to get more diff
+
+sample5/test_example.py:21: AssertionError
+=========================== short test summary info ============================
+FAILED sample5/test_example.py::test_AnsiTextWrapper_wrap - AssertionError: a...
+========================= 1 failed, 2 passed in 0.08s ==========================
+
+Test Error Output:
+
+

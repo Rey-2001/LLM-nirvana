@@ -1,0 +1,81 @@
+Name                                                                                                           Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/__init__.py                                  4      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/__main__.py                                  8      7      0      0    12%   7-14
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/adapters.py                                  7      3      0      0    57%   11-13
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/__init__.py                              0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/argparser.py                           316    262    152      0    12%   44-45, 48-49, 53-71, 96-106, 111-125, 130-135, 157-194, 197-200, 206-225, 233-267, 270-280, 284-355, 363-380, 388-389, 395-397, 403-404, 414-446, 454-490, 499-528, 532-540, 543-552, 555-559, 562-570, 576-596, 601-613
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/argtypes.py                            135     75     34      2    40%   16-19, 22, 25, 35-38, 45, 73-108, 119-130, 135-140, 145, 152, 155, 162, 165, 179-183, 195-199, 222-223, 231, 236-244, 263-268, 272-275
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/constants.py                            46      0      2      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/definition.py                          108     19     14      0    75%   250-273, 627-663
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/dicts.py                                40     21     16      0    34%   26-36, 42-46, 65-71, 74-78
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/exceptions.py                            2      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/nested_json/__init__.py                  4      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/nested_json/errors.py                   14      9      2      0    31%   14-17, 20-27
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/nested_json/interpret.py                77     66     40      0     9%   24-27, 31-104, 108-116, 124-129
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/nested_json/parse.py                   107     99     44      0     5%   39-124, 128-178, 182-189, 193
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/nested_json/tokens.py                   49     17     12      0    52%   19-23, 52, 63-66, 69-76
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/options.py                             124     37     44      2    65%   51->53, 53->55, 65, 90, 114-165, 169, 173, 176-179, 239
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/requestitems.py                        100     72     24      0    23%   27-34, 42-120, 127, 131, 135-137, 143, 147, 151-158, 172-186, 190, 194, 198-200, 204-205, 209, 213-220, 227-230
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cli/utils.py                                41     14      6      0    57%   24-25, 50-54, 58-63, 70, 73-76, 79
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/client.py                                  172    128     76      1    18%   48-140, 148-153, 161-184, 188, 193-209, 220-227, 241-260, 264-278, 282, 289-301, 315-322, 325->exit, 335-360, 394-400
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/compat.py                                   51     36     14      1    25%   22-67, 77, 81-84, 88-102
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/config.py                                   95     43     18      3    49%   37, 41, 48, 66-77, 86-87, 90, 93, 97, 101, 104-108, 111-128, 132, 144-146, 150, 153, 159, 163, 172
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/context.py                                 122     52     28      6    52%   13-14, 24, 74->93, 78-91, 107->110, 110->121, 114-117, 124-128, 135, 141-149, 153-155, 159-168, 171-176, 185-186, 193-200, 213, 217
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/cookies.py                                  11      5      2      0    46%   12-20, 25
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/core.py                                    170    142     80      0    11%   39-143, 160-162, 176-267, 271-282, 294
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/downloads.py                               175    132     52      0    19%   39-82, 97-103, 107-123, 127-134, 138-141, 145-148, 152-159, 180-184, 193-200, 217-260, 263-265, 268, 272, 286, 294-304, 311-316, 319-323, 326-343, 350-352, 356, 360-366, 369-373, 376-377
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/encoding.py                                 18     10      6      0    33%   24-29, 39-41, 50
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/internal/__build_channel__.py                1      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/internal/__init__.py                         0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/internal/daemon_runner.py                   28     16      4      0    38%   17-21, 31-34, 38, 42-50
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/internal/daemons.py                         58     43     14      0    21%   23-29, 33-47, 64-99, 106-109, 113-121
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/internal/update_warnings.py                 96     68     40      0    21%   33-37, 41-52, 56-59, 63-75, 85-88, 98-102, 110-133, 137, 142-171
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/legacy/__init__.py                           0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/legacy/v3_1_0_session_cookie_format.py      33     24     26      1    17%   5, 40-64, 75-81, 85-100
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/legacy/v3_2_0_session_header_format.py      27     19     16      1    21%   4, 30-46, 57-64, 68-73
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/__init__.py                          0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/__main__.py                         33     23      6      0    26%   15-29, 33-48, 52-57
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/cli.py                              39      1      8      1    96%   98
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/compat.py                           35     24     10      0    24%   14-15, 25-42, 47-59, 63-68
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/core.py                             20     10      8      0    36%   27-30, 34-42
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/tasks/__init__.py                    5      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/tasks/check_updates.py               8      3      0      0    62%   8-10
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/tasks/export_args.py                14      5      2      0    56%   17-27
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/tasks/plugins.py                   153    124     64      0    13%   24-28, 31-43, 51-58, 63-103, 106-109, 115-130, 133-146, 149-182, 191-194, 197-215, 222-237, 241-248
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/manager/tasks/sessions.py                   43     31     18      0    20%   18-27, 31-60, 64, 73-86
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/models.py                                  113     61     24      0    38%   27, 31, 35, 40, 45, 49-50, 55-58, 65, 68, 72-86, 90-98, 111-127, 134, 137, 141-161, 165-169, 181-186, 209, 222-230
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/__init__.py                           0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/formatters/__init__.py                0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/formatters/colors.py                140     67     28      0    48%   37, 58-79, 82, 89-96, 99, 109, 120-128, 136-139, 148-194
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/formatters/headers.py                 9      5      2      0    36%   7-8, 16-18
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/formatters/json.py                   16     11      3      0    26%   9-10, 13-34
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/formatters/xml.py                    43     31     16      1    22%   7, 16-17, 21-26, 34-50, 56-57, 60-79
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/lexers/__init__.py                    0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/lexers/common.py                      4      3      2      0    17%   9-12
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/lexers/json.py                       10      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/lexers/metadata.py                   17     10      4      0    33%   14-30
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/models.py                            27      6      4      0    68%   29-32, 36-40, 44
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/processing.py                        37     22     20      0    26%   13, 20-23, 36-42, 45-47, 50-53, 56-58
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/streams.py                          138     93     48      0    24%   45-49, 53, 57, 65-85, 95-96, 99, 122-136, 139-143, 146-148, 152-163, 167, 186-188, 191, 195, 199-217, 220-225, 241-254
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/ui/__init__.py                        0      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/ui/palette.py                        72     14     18      2    76%   42-52, 95-101, 256, 269
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/output/writer.py                            76     58     30      0    17%   34-58, 67-76, 89-97, 108-113, 129-150, 162-204
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/plugins/__init__.py                          2      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/plugins/base.py                             38     11      0      0    71%   69, 93, 107, 117, 121, 138-140, 148, 157, 165
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/plugins/builtin.py                          39     11      0      0    72%   26-28, 32-34, 40, 43-44, 54, 68, 79
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/plugins/manager.py                          67     33     20      0    41%   29-38, 42-45, 54, 57, 60-64, 67-80, 84, 87, 92, 96, 99, 106, 110, 113, 121
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/plugins/registry.py                          8      0      0      0   100%
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/sessions.py                                155    104     52      0    25%   43, 48-49, 57, 61-72, 76, 83, 101-121, 136-156, 159-168, 171-183, 186-198, 201-228, 237-248, 252, 256-257, 261, 264-265, 274-299, 303-304, 308, 311-322
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/ssl_.py                                     40     10     13      1    66%   35, 58-59, 63-64, 93-99
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/status.py                                   20      7      8      0    54%   30-40
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/uploads.py                                 132     99     54      1    18%   13, 22, 32-34, 37-41, 52-53, 56-62, 66-69, 79-84, 88-93, 103-127, 131-143, 153-188, 199-227, 235-249, 256-269
+/Users/DELL/Desktop/python_projects_pynguin_testing/cli-master/httpie/utils.py                                   131     84     40      0    27%   37-38, 62-63, 69, 73, 77, 104-121, 130, 140, 151-153, 161-178, 195-200, 205-218, 222-226, 230-245, 249-255, 259-263, 276-290, 300-309
+__init__.py                                                                                                        0      0      0      0   100%
+conftest.py                                                                                                       46     23      6      1    46%   42-43, 48-52, 57-59, 64-68, 73-75, 85-89
+test_example.py                                                                                                   67     28      7      0    53%   11, 23, 27, 38-39, 42-45, 50, 53-56, 59-60, 70-74, 81-87, 90-91
+utils/__init__.py                                                                                                236    151     53      0    29%   58, 62-63, 67-68, 90, 93-95, 98-102, 111-113, 116-121, 138-156, 160-163, 166-167, 170-177, 181-184, 189, 214-216, 220-227, 250-272, 281-283, 287, 300-323, 376-455
+utils/http_server.py                                                                                             101     61     20      0    33%   25-30, 38-42, 47-58, 63-79, 84-88, 93-105, 110-116, 121-129, 134-139, 148-149, 157-158
+utils/plugins_cli.py                                                                                             125     73     34      0    36%   24, 33, 53-81, 88, 98, 102, 111-112, 115-120, 123-128, 132-163, 168-170, 178, 183-186, 192, 208-226, 231-235
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                           4498   2716   1388     24    32%

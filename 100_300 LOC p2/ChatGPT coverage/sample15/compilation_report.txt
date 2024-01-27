@@ -1,0 +1,29 @@
+Directory: ./sample15
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 17 items
+
+sample15/test_example.py .............F...                               [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_filter __________________________________
+
+    def test_filter():
+        lst1 = ImmutableList(1, ImmutableList(2, ImmutableList(3)))
+        lst2 = lst1.filter(lambda x: x % 2 == 0)
+        assert lst2.head == 2
+>       assert lst2.tail is None
+E       assert <example.ImmutableList object at 0x7ff9623146a0> is None
+E        +  where <example.ImmutableList object at 0x7ff9623146a0> = <example.ImmutableList object at 0x7ff962314340>.tail
+
+sample15/test_example.py:91: AssertionError
+=========================== short test summary info ============================
+FAILED sample15/test_example.py::test_filter - assert <example.ImmutableList ...
+========================= 1 failed, 16 passed in 0.10s =========================
+
+Test Error Output:
+
+

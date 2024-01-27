@@ -1,0 +1,109 @@
+Directory: ./sample14
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 14 items
+
+sample14/test_example.py ......FF....FF                                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_left_to_maybe ______________________________
+
+    def test_left_to_maybe():
+        left = Left(5)
+>       result = left.to_maybe()
+
+sample14/test_example.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Left object at 0x7fbe129bab00>
+
+    def to_maybe(self):
+        """
+        Transform Either to Maybe.
+    
+        :returns: Empty Maybe
+        :rtype: Maybe[None]
+        """
+>       from pymonet.maybe import Maybe
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample14/example.py:134: ModuleNotFoundError
+___________________________ test_left_to_validation ____________________________
+
+    def test_left_to_validation():
+        left = Left(5)
+>       result = left.to_validation()
+
+sample14/test_example.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Left object at 0x7fbe12a2d3f0>
+
+    def to_validation(self):
+        """
+        Transform Box into Validation.
+    
+        :returns: failed Validation monad with previous value as error
+        :rtype: Validation[None, [A]]
+        """
+>       from pymonet.validation import Validation
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample14/example.py:145: ModuleNotFoundError
+_____________________________ test_right_to_maybe ______________________________
+
+    def test_right_to_maybe():
+        right = Right(5)
+>       result = right.to_maybe()
+
+sample14/test_example.py:116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Right object at 0x7fbe129b91e0>
+
+    def to_maybe(self):
+        """
+        Transform Either to Maybe.
+    
+        :returns: Maybe with previous value
+        :rtype: Maybe[A]
+        """
+>       from pymonet.maybe import Maybe
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample14/example.py:196: ModuleNotFoundError
+___________________________ test_right_to_validation ___________________________
+
+    def test_right_to_validation():
+        right = Right(5)
+>       result = right.to_validation()
+
+sample14/test_example.py:124: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Right object at 0x7fbe1295afe0>
+
+    def to_validation(self):
+        """
+        Transform Either into Validation.
+    
+        :returns: successfull Validation monad with previous value
+        :rtype: Validation[A, []]
+        """
+>       from pymonet.validation import Validation
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample14/example.py:207: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED sample14/test_example.py::test_left_to_maybe - ModuleNotFoundError: No...
+FAILED sample14/test_example.py::test_left_to_validation - ModuleNotFoundErro...
+FAILED sample14/test_example.py::test_right_to_maybe - ModuleNotFoundError: N...
+FAILED sample14/test_example.py::test_right_to_validation - ModuleNotFoundErr...
+========================= 4 failed, 10 passed in 0.10s =========================
+
+Test Error Output:
+
+

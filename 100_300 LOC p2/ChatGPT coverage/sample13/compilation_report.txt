@@ -1,0 +1,168 @@
+Directory: ./sample13
+Test Output:
+============================= test session starts ==============================
+platform darwin -- Python 3.10.12, pytest-7.4.0, pluggy-1.3.0
+rootdir: /Users/DELL/Desktop/new_chatgpt/cat3_classes
+plugins: dash-2.14.0
+collected 11 items
+
+sample13/test_example.py .....FFFFFF                                     [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_box_ap __________________________________
+
+    def test_box_ap():
+        value1 = 5
+        value2 = lambda x: x+5
+        box1 = Box(value1)
+        box2 = Box(value2)
+>       new_box = box1.ap(box2)
+
+sample13/test_example.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sample13/example.py:57: in ap
+    return applicative.map(self.value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Box object at 0x7fef82b08e20>, mapper = 5
+
+    def map(self, mapper: Callable[[T], U]) -> 'Box[U]':
+        """
+        Take function (A) -> b and applied this function on current box value and returns new box with mapped value.
+    
+        :param mapper: mapper function
+        :type mapper: Function(A) -> B
+        :returns: new box with mapped value
+        :rtype: Box[B]
+        """
+>       return Box(mapper(self.value))
+E       TypeError: 'int' object is not callable
+
+sample13/example.py:35: TypeError
+______________________________ test_box_to_maybe _______________________________
+
+    def test_box_to_maybe():
+        value = 5
+        box = Box(value)
+>       maybe = box.to_maybe()
+
+sample13/test_example.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Box object at 0x7fef82b0ac50>
+
+    def to_maybe(self):
+        """
+        Transform Box into not empty Maybe.
+    
+        :returns: non empty Maybe monad with previous value
+        :rtype: Maybe[A]
+        """
+>       from pymonet.maybe import Maybe
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample13/example.py:66: ModuleNotFoundError
+______________________________ test_box_to_either ______________________________
+
+    def test_box_to_either():
+        value = 5
+        box = Box(value)
+>       either = box.to_either()
+
+sample13/test_example.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Box object at 0x7fef82a5b2b0>
+
+    def to_either(self):
+        """
+        Transform Box into Right either.
+    
+        :returns: right Either monad with previous value
+        :rtype: Right[A]
+        """
+>       from pymonet.either import Right
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample13/example.py:77: ModuleNotFoundError
+_______________________________ test_box_to_lazy _______________________________
+
+    def test_box_to_lazy():
+        value = 5
+        box = Box(value)
+>       lazy = box.to_lazy()
+
+sample13/test_example.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Box object at 0x7fef82b0a920>
+
+    def to_lazy(self):
+        """
+        Transform Box into Lazy with returning value function.
+    
+        :returns: not folded Lazy monad with function returning previous value
+        :rtype: Lazy[Function(() -> A)]
+        """
+>       from pymonet.lazy import Lazy
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample13/example.py:88: ModuleNotFoundError
+_______________________________ test_box_to_try ________________________________
+
+    def test_box_to_try():
+        value = 5
+        box = Box(value)
+>       try_monad = box.to_try()
+
+sample13/test_example.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Box object at 0x7fef82a5ba00>
+
+    def to_try(self):
+        """
+        Transform Box into successfull Try.
+    
+        :returns: successfull Try monad with previous value
+        :rtype: Try[A]
+        """
+>       from pymonet.monad_try import Try
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample13/example.py:99: ModuleNotFoundError
+____________________________ test_box_to_validation ____________________________
+
+    def test_box_to_validation():
+        value = 5
+        box = Box(value)
+>       validation = box.to_validation()
+
+sample13/test_example.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <example.Box object at 0x7fef82af55d0>
+
+    def to_validation(self):
+        """
+        Transform Box into Validation.
+    
+        :returns: successfull Validation monad with previous value
+        :rtype: Validation[A, []]
+        """
+>       from pymonet.validation import Validation
+E       ModuleNotFoundError: No module named 'pymonet'
+
+sample13/example.py:110: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED sample13/test_example.py::test_box_ap - TypeError: 'int' object is not...
+FAILED sample13/test_example.py::test_box_to_maybe - ModuleNotFoundError: No ...
+FAILED sample13/test_example.py::test_box_to_either - ModuleNotFoundError: No...
+FAILED sample13/test_example.py::test_box_to_lazy - ModuleNotFoundError: No m...
+FAILED sample13/test_example.py::test_box_to_try - ModuleNotFoundError: No mo...
+FAILED sample13/test_example.py::test_box_to_validation - ModuleNotFoundError...
+========================= 6 failed, 5 passed in 0.11s ==========================
+
+Test Error Output:
+
+
