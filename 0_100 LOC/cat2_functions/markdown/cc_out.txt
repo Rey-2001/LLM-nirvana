@@ -1,0 +1,6 @@
+4:0: 'parse' 3
+19:0: 'wrap' 1
+23:0: 'check_headers' 3
+32:0: 'check_bold' 2
+42:0: 'check_italic' 2
+52:0: 'parse_line' 9

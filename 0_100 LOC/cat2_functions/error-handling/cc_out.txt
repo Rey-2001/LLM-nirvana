@@ -1,0 +1,4 @@
+1:0: 'handle_error_by_throwing_exception' 1
+5:0: 'handle_error_by_returning_none' 3
+12:0: 'handle_error_by_returning_tuple' 3
+19:0: 'filelike_objects_are_closed_on_exception' 1
