@@ -1,0 +1,4 @@
+6:0: 'moveA' 1
+13:0: 'moveB' 1
+19:0: 'moveC' 1
+Loop 30 5
