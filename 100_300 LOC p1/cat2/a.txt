@@ -1,0 +1,13 @@
+8 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/particle_filter/particle_filter.py
+9 - https://github.com/stonerlab/Stoner-PythonCode/blob/master/Stoner/plot/utils.py
+10 - https://github.com/wesm/vbench/blob/master/vbench/utils.py
+11 - https://github.com/Show-Me-the-Code/python/blob/master/A1014280203/25/25.py
+12 - https://github.com/Show-Me-the-Code/python/blob/master/AK-wang/0002/save_key.py
+13 - https://github.com/cosmicpython/code/blob/master/src/allocation/service_layer/handlers.py
+14 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/AerialNavigation/drone_3d_trajectory_following/drone_3d_trajectory_following.py
+15 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/ArmNavigation/arm_obstacle_navigation/arm_obstacle_navigation.py - class also
+16 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/ArmNavigation/n_joint_arm_to_point_control/n_joint_arm_to_point_control.py
+17 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/ArmNavigation/two_joint_arm_to_point_control/two_joint_arm_to_point_control.py
+18 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/Control/inverted_pendulum/inverted_pendulum_lqr_control.py
+19 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/Control/inverted_pendulum/inverted_pendulum_mpc_control.py
+20 - https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/cubature_kalman_filter/cubature_kalman_filter.py
