@@ -1,0 +1,13 @@
+4:4: 'ComplexNumber.__init__' 1
+8:4: 'ComplexNumber.__eq__' 2
+13:4: 'ComplexNumber.__add__' 2
+23:4: 'ComplexNumber.__radd__' 2
+33:4: 'ComplexNumber.__mul__' 2
+41:4: 'ComplexNumber.__rmul__' 2
+49:4: 'ComplexNumber.__sub__' 2
+56:4: 'ComplexNumber.__rsub__' 2
+64:4: 'ComplexNumber.__truediv__' 2
+75:4: 'ComplexNumber.__rtruediv__' 2
+86:4: 'ComplexNumber.__abs__' 1
+90:4: 'ComplexNumber.conjugate' 1
+93:4: 'ComplexNumber.exp' 1

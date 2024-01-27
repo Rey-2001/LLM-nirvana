@@ -1,0 +1,3 @@
+6:4: 'Character.__init__' 1
+15:4: 'Character.ability' 1
+20:0: 'modifier' 1

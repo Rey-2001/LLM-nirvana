@@ -1,0 +1,11 @@
+2:4: 'CustomSet.__init__' 1
+5:4: 'CustomSet.isempty' 1
+8:4: 'CustomSet.__iter__' 1
+11:4: 'CustomSet.__contains__' 1
+14:4: 'CustomSet.issubset' 1
+17:4: 'CustomSet.isdisjoint' 1
+20:4: 'CustomSet.__eq__' 1
+23:4: 'CustomSet.add' 2
+27:4: 'CustomSet.intersection' 3
+34:4: 'CustomSet.__sub__' 3
+41:4: 'CustomSet.__add__' 2

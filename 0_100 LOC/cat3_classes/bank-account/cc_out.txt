@@ -1,0 +1,6 @@
+5:4: 'BankAccount.__init__' 1
+10:4: 'BankAccount.get_balance' 2
+16:4: 'BankAccount.open' 2
+22:4: 'BankAccount.deposit' 3
+30:4: 'BankAccount.withdraw' 4
+40:4: 'BankAccount.close' 2
