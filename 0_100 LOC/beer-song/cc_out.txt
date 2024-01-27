@@ -1,6 +1,0 @@
-1:0: 'recite' 3
-10:0: 'verse' 1
-17:0: '_action' 2
-24:0: '_next_bottle' 1
-28:0: '_bottles' 3
-37:0: '_next_verse' 1
